@@ -10,13 +10,12 @@
 <body style="background-color: whitesmoke">
 
 <main class="container my-5">
-    <img src="static/images/profiel_foto.jpg" class="rounded-circle float-right m-5" style="width: 12vw; height: 12vw; object-fit: cover" alt="Gerard Krijgsman">
+    <img src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/assets/images/profiel_foto.jpg" class="rounded-circle float-right m-5" style="width: 8vw; height: 8vw; object-fit: cover" alt="Gerard Krijgsman">
     <div class="jumbotron">
         <h1>Gerard Krijgsman</h1>
-        <p class="lead">Aspirerend Software Engineer</p>
+        <p class="lead">Web Developer</p>
         <p>
-            Hallo, mijn naam is Gerard Krijgsman en mijn doel is om professioneel software engineer te worden.
-            Op dit moment ben ik al een tijdje bezig met (zelf aanleren van) web development.
+            Hallo, mijn naam is Gerard Krijgsman en ik ben web developer.
         </p>
     </div>
 

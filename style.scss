@@ -12,8 +12,93 @@ Template:		prutser
  */
 
 @import 'vendor/thomaspark/bootswatch/dist/litera/variables';
-
-$body-bg: whitesmoke;
-
+@import 'scss/variables';
 @import 'vendor/twbs/bootstrap/scss/bootstrap';
 @import 'vendor/thomaspark/bootswatch/dist/litera/bootswatch';
+@import '../prutser/scss/wordpress';
+
+/* Bootswatch Litera button border radius is ugly, so reset to Bootstrap default */
+
+.btn {
+  border-radius: .25rem;
+
+  &-lg {
+	border-radius: .2rem;
+  }
+
+  &-sm {
+	border-radius: .3rem;
+  }
+}
+
+.navbar {
+  margin-bottom: 1rem;
+}
+
+.navbar.bg-dark {
+  background-color: $dark !important;
+}
+
+article.post:not(:first-of-type) {
+  margin-top: 3rem;
+}
+
+.entry-title {
+  padding: $headings-margin-bottom $card-spacer-x;
+}
+
+h1.entry-title a, h2.entry-title a {
+  color: $body-color;
+
+  &:hover {
+	color: $link-hover-color;
+	text-decoration: none;
+  }
+}
+
+.entry-content {
+  background-color: $card-bg;
+  border: $card-border-width solid $card-border-color;
+  @include border-radius($card-border-radius);
+  padding: $card-spacer-x;
+}
+
+pre {
+  background-color: $gray-100;
+  border-left: solid 3px $gray-400;
+  font-size: $font-size-sm;
+  font-weight: $font-weight-light;
+  color: $gray-700;
+  margin: $spacer;
+  padding: $spacer;
+}
+
+.entry-content *:last-child {
+  margin-bottom: 0;
+}
+
+.entry-content a.more-link:hover {
+  text-decoration: none;
+}
+
+.entry-footer {
+  color: $gray-400;
+  padding: $headings-margin-bottom $card-spacer-x;
+}
+
+.entry-footer > span:hover {
+  color: $body-color;
+}
+
+.entry-footer a {
+  color: $gray-600;
+
+  &:hover {
+    color: $body-color;
+    text-decoration: none;
+  }
+}
+
+.nav-links {
+  @extend .text-center;
+}

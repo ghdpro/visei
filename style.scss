@@ -20,19 +20,31 @@ Template:		prutser
 /* Bootswatch Litera button border radius is ugly, so reset to Bootstrap default */
 
 .btn {
-  border-radius: .25rem;
+  border-radius: $border-radius;
 
   &-lg {
-	border-radius: .2rem;
+	border-radius: $border-radius-lg;
   }
 
   &-sm {
-	border-radius: .3rem;
+	border-radius: $border-radius-sm;
   }
 }
 
-.navbar.bg-dark {
+nav.navbar.bg-dark {
   background-color: $dark !important;
+}
+
+nav.navbar form input[type=submit] {
+  color: $navbar-dark-color;
+  border-color: $navbar-dark-color;
+  margin-left: $spacer / 2;
+
+  &:hover {
+    color: $body-color;
+    background-color: $navbar-dark-hover-color;
+    border-color: $navbar-dark-hover-color;
+  }
 }
 
 .entry-title {
@@ -89,4 +101,52 @@ pre {
     color: $body-color;
     text-decoration: none;
   }
+}
+
+.comments-area form > p {
+  font-family: $font-family-sans-serif;
+}
+
+.comment-metadata a {
+  color: $gray-600;
+
+  &:hover {
+    color: $body-color;
+    text-decoration: none;
+  }
+}
+
+body > footer {
+  background-color: $gray-400;
+  border-top: $border-width solid $gray-500;
+  color: $gray-700;
+}
+
+body > footer ul.menu {
+  list-style: none;
+  padding-left: $spacer;
+}
+
+body > footer a {
+  color: $gray-700;
+
+  &:hover {
+    color: $link-color;
+    text-decoration: none;
+  }
+}
+
+body > footer .btn-outline-primary {
+  border-color: $gray-700;
+  color: $gray-700;
+}
+
+body > footer .copyright {
+  font-size: $font-size-base * .75;
+  color: $gray-700;
+  padding-left: $spacer * 2;
+}
+
+body > footer p {
+  font-family: $font-family-sans-serif;
 }

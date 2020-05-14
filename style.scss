@@ -8,7 +8,7 @@ Version:        0.1.1
 License:        GNU General Public License, version 2
 License URI:    https://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 Text Domain:    visei
-Template:		prutser
+Template:       prutser
  */
 
 @import 'vendor/thomaspark/bootswatch/dist/litera/variables';
@@ -23,11 +23,11 @@ Template:		prutser
   border-radius: $border-radius;
 
   &-lg {
-	border-radius: $border-radius-lg;
+    border-radius: $border-radius-lg;
   }
 
   &-sm {
-	border-radius: $border-radius-sm;
+    border-radius: $border-radius-sm;
   }
 }
 
